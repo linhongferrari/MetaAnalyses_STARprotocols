@@ -26,3 +26,5 @@ Example inputs were provided.
 (10)VP_var.csv
 (11)VPplot.pdf
 Example outputs were provided.
+
+For any questions, please contact Hong Lin (lh12263@rjh.com.cn).
