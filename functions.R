@@ -23,7 +23,7 @@ OR<-function(form,meta.d,clinic.d,outcome.d){
   outputs1<-c()#form1 OR and P
   for (i in 1:ncol(meta.d)){
     output1<-c()
-    tempdata<-data.frame((meta.d[,i]-mean(meta.d[,i])/sd(meta.d[,i])),clinic.d,outcome.d)
+    tempdata<-data.frame(meta.d[,i]/sd(meta.d[,i]),clinic.d,outcome.d)
     colnames(tempdata)<-c("meta",colnames(clinic.d),colnames(outcome.d))
     #model1
     cm1 <- try(clogit(form, data = tempdata),silent = T)
